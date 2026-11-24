@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é felicidade? — Parte 2</title>
+    <style>
+        :root {
+            --bg-color: #f6f7f4;
+            --card-bg: #ffffff;
+            --text-main: #3b423c;
+            --text-muted: #6e7870;
+            --accent: #7a9382;
+            --accent-hover: #647b6b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            line-height: 1.8;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            max-width: 620px;
+            width: 100%;
+            padding: 48px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(59, 66, 60, 0.05);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.9rem;
+            font-weight: normal;
+            color: var(--text-main);
+            margin-bottom: 28px;
+            line-height: 1.3;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .footer-nav {
+            margin-top: 36px;
+            padding-top: 24px;
+            border-top: 1px solid #eef0ec;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-indicator {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .btn {
+            text-decoration: none;
+            background-color: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 9px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent);
+            color: #ffffff;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 32px 24px; }
+            h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <span class="tag">Reflexão • 02</span>
+        <h1>Longe dos filtros</h1>
+
+        <p>A felicidade não é um estado permanente de euforia, nem o filtro perfeito que vemos todos os dias nas redes sociais. A internet criou a ilusão de que estar bem significa ter uma vida impecável e sorrir o tempo todo, transformando uma emoção natural em uma obrigação exaustiva.</p>
+
+        <p>Na vida real, ser feliz tem muito mais a ver com paz interior, conexões verdadeiras e a liberdade de ser quem você é — inclusive nos dias difíceis. Sentir tristeza, cansaço ou dúvida não significa que você falhou, mas sim que você é humano. Desconstruir essa busca pela perfeição é o primeiro passo para encontrar alegria nos momentos simples e reais, longe das telas.</p>
+
+        <nav class="footer-nav">
+            <a href="index.html" class="btn">&larr; Voltar</a>
+            <span class="page-indicator">Página 2 de 2</span>
+        </nav>
+    </main>
+
+</body>
+</html>
