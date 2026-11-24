@@ -29,8 +29,9 @@
             padding: 24px;
             line-height: 1.8;
 
-            /* IMAGEM DE FUNDO COM NOME ORIGINAL */
-            background-image: url('Gemini_Generated_Image_q91xxbq91xxbq91x_2.jpeg');
+            /* IMAGEM DE FUNDO */
+            background-color: #e6eff2;
+            background-image: url('Gemini_Generated_Image_q91xxbq91xxbq91x_3.jpeg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -43,7 +44,7 @@
             -webkit-backdrop-filter: blur(8px);
             max-width: 620px;
             width: 100%;
-            padding: 48px 40px;
+            padding: 48px 40px 32px;
             border-radius: 20px;
             box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
             border: 1px solid rgba(255, 255, 255, 0.6);
@@ -107,13 +108,21 @@
             color: #ffffff;
         }
 
+        .credits {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
         @media (max-width: 480px) {
-            .container { padding: 32px 24px; }
+            .container { padding: 32px 24px 24px; }
             h1 { font-size: 1.6rem; }
         }
     </style>
@@ -136,7 +145,6 @@
         <footer class="credits">
             Criado por Stefany Azevedo — 2º ano EMTI
         </footer>
-        
     </main>
 
 </body>
